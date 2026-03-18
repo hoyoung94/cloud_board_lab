@@ -184,3 +184,21 @@ cloud_board_lab/
 - 도메인 연결과 HTTPS
 - 운영 로그 점검
 - 댓글 / 일반 사용자 기능 같은 2차 확장
+
+## Local Domain Example
+
+기존 `blog_lab`이 이미 80포트 기본 사이트를 쓰고 있다면, `cloud_board_lab`은 별도 로컬 도메인으로 붙이는 방식이 가장 간단합니다.
+
+- Nginx `server_name`: `cloud-board.local`
+- 프록시 대상: `127.0.0.1:3001`
+- Windows hosts 예시:
+
+```text
+192.168.100.130 cloud-board.local
+```
+
+브라우저 접속:
+
+```text
+http://cloud-board.local
+```

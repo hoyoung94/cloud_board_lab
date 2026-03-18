@@ -162,6 +162,24 @@ curl -I http://127.0.0.1
 http://SERVER_IP
 ```
 
+현재 실습처럼 기존 `blog_lab`이 이미 80포트 기본 사이트로 연결돼 있다면,
+`cloud_board_lab`은 `cloud-board.local` 같은 별도 로컬 도메인으로 붙이는 방식이 가장 안전합니다.
+
+이 경우 [deploy/nginx/cloud-board-lab.conf](../deploy/nginx/cloud-board-lab.conf)는
+`server_name cloud-board.local;` 과 `proxy_pass http://127.0.0.1:3001;` 기준으로 동작합니다.
+
+Windows 호스트 파일에 아래 한 줄을 추가하면 브라우저에서 바로 열 수 있습니다.
+
+```text
+192.168.100.130 cloud-board.local
+```
+
+그다음 접속 주소:
+
+```text
+http://cloud-board.local
+```
+
 ## 10. 테스트 데이터 넣기
 
 ```bash
