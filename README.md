@@ -155,6 +155,7 @@ npm run seed:test-posts
 Ubuntu 서버에서 실제로 배포하려면 아래 문서를 따라가면 됩니다.
 
 - 배포 가이드: [docs/ubuntu-deploy.md](./docs/ubuntu-deploy.md)
+- SSH 직접 연결 가이드: [docs/ubuntu-direct-ssh-setup.md](./docs/ubuntu-direct-ssh-setup.md)
 - PM2 설정: [ecosystem.config.cjs](./ecosystem.config.cjs)
 - Nginx 설정: [deploy/nginx/cloud-board-lab.conf](./deploy/nginx/cloud-board-lab.conf)
 - 첫 배포 스크립트: [scripts/ubuntu-first-deploy.sh](./scripts/ubuntu-first-deploy.sh)
